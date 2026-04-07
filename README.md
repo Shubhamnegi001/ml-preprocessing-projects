@@ -1,89 +1,137 @@
-# 🧠 Machine Learning Data Preprocessing Projects
+# 🧠 Machine Learning Projects (Preprocessing + Modeling)
 
-This repository contains multiple real-world datasets where I performed **complete data preprocessing pipelines** including cleaning, encoding, feature engineering, scaling, and feature selection.
+This repository contains multiple real-world datasets where I performed **end-to-end machine learning workflows**, including:
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Feature Selection (Statistical Methods)
+- Model Training & Evaluation
 
 ---
 
 ## 📂 Projects Included
 
-### 🏥 Insurance Cost Prediction (Preprocessing)
+---
 
-* Data Cleaning & EDA
-* Feature Engineering (BMI categories)
-* Encoding (Label + One-Hot)
-* Scaling (StandardScaler)
-* Feature Selection:
+### 🏥 Insurance Cost Prediction
 
-  * Pearson Correlation
-  * Chi-Square Test
+**Type:** Regression (End-to-End ML Pipeline)
 
-👉 Key Insight: Smoking has the highest impact on insurance charges.
+#### 🔧 Work Done:
+- Data Cleaning & EDA
+- Feature Engineering (BMI categories)
+- Encoding (Binary + One-Hot)
+- Feature Scaling (StandardScaler)
+- Feature Selection:
+  - Pearson Correlation
+  - Chi-Square Test
+- Model Training:
+  - Linear Regression
+
+#### 📈 Performance:
+- R² Score: ~0.80
+- Adjusted R²: ~0.79
+
+👉 **Key Insight:** Smoking has the highest impact on insurance charges.
 
 ---
 
-### ❤️ Heart Disease Prediction (Preprocessing)
+### 🚗 Ford Car Price Prediction
 
-* Handling invalid values (0 → mean replacement)
-* Target-based EDA
-* One-hot encoding
-* Feature scaling
+**Type:** Regression + Model Comparison
 
-👉 Key Insight: Data cleaning and feature distribution significantly affect prediction readiness.
+#### 🔧 Work Done:
+- Exploratory Data Analysis (EDA)
+- Feature Encoding:
+  - One-Hot Encoding
+  - Label Encoding (for comparison)
+- Feature Scaling
+- Model Training:
+  - Linear Regression
+
+#### 📈 Performance:
+- One-Hot Encoding Model:
+  - R²: ~0.84
+- Label Encoding Model:
+  - R²: ~0.73
+
+👉 **Key Insight:** One-Hot Encoding significantly outperforms Label Encoding for linear models.
 
 ---
 
-### 🦠 COVID-19 Data Analysis (India) – *New*
+### ❤️ Heart Disease Prediction
 
-* Filtered India-specific data from OWID dataset
-* Handled large-scale missing values using time-series techniques
+**Type:** Classification (Preprocessing Focus)
 
-  * Forward fill (ffill) for testing & policy data
-  * Zero filling for vaccination data (pre-vaccine period)
-* Removed redundant and constant features
-* Performed feature selection based on correlation
-* Created custom feature:
+#### 🔧 Work Done:
+- Handling invalid values (0 → mean replacement)
+- Target-based EDA
+- One-hot encoding
+- Feature scaling
 
-  * `cases_test_ratio` (cases vs testing insight)
+👉 **Key Insight:** Data cleaning and feature distribution significantly impact model readiness.
 
-👉 Key Insight: Testing rate and positivity ratio strongly influence case trends.
+---
+
+### 🦠 COVID-19 Data Analysis (India)
+
+**Type:** Time-Series Data Preprocessing
+
+#### 🔧 Work Done:
+- Filtered India-specific data from OWID dataset
+- Handled missing values using time-series techniques:
+  - Forward fill (ffill)
+  - Zero filling (pre-vaccine period)
+- Removed redundant features
+- Feature selection using correlation
+- Feature Engineering:
+  - `cases_test_ratio`
+
+👉 **Key Insight:** Testing rate and positivity ratio strongly influence case trends.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* SciPy
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- SciPy
 
 ---
 
 ## 🚀 What I Learned
 
-* Importance of real-world data cleaning
-* Handling missing values in time-series data
-* Feature engineering and feature interaction
-* Statistical feature selection
-* Building ML-ready datasets
+- Building **complete ML pipelines**
+- Real-world data cleaning techniques
+- Feature engineering & transformation
+- Statistical feature selection
+- Comparing encoding techniques
+- Model evaluation and interpretation
 
 ---
 
 ## 🔜 Next Steps
 
-* Feature Engineering (Lag & Rolling features)
-* Model building (Regression & Time Series Models)
-* Model evaluation (RMSE, Accuracy, etc.)
-* Feature importance using ML models
+- Try advanced models:
+  - Random Forest
+  - Gradient Boosting
+- Hyperparameter tuning
+- Build pipelines using `sklearn Pipeline`
+- Model deployment (Streamlit)
 
 ---
 
 ## 📌 Project Status
 
-🔄 Actively Updating
-(Currently adding preprocessing → next: model training)
+✅ Preprocessing Completed  
+✅ Feature Engineering Completed  
+✅ Model Training Added  
+🔄 Improving models & adding new projects  
 
 ---
 
