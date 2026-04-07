@@ -32,6 +32,23 @@ This repository contains multiple real-world datasets where I performed **comple
 
 ---
 
+### 🦠 COVID-19 Data Analysis (India) – *New*
+
+* Filtered India-specific data from OWID dataset
+* Handled large-scale missing values using time-series techniques
+
+  * Forward fill (ffill) for testing & policy data
+  * Zero filling for vaccination data (pre-vaccine period)
+* Removed redundant and constant features
+* Performed feature selection based on correlation
+* Created custom feature:
+
+  * `cases_test_ratio` (cases vs testing insight)
+
+👉 Key Insight: Testing rate and positivity ratio strongly influence case trends.
+
+---
+
 ## 🛠️ Tech Stack
 
 * Python
@@ -47,7 +64,8 @@ This repository contains multiple real-world datasets where I performed **comple
 ## 🚀 What I Learned
 
 * Importance of real-world data cleaning
-* Feature engineering techniques
+* Handling missing values in time-series data
+* Feature engineering and feature interaction
 * Statistical feature selection
 * Building ML-ready datasets
 
@@ -55,9 +73,17 @@ This repository contains multiple real-world datasets where I performed **comple
 
 ## 🔜 Next Steps
 
-* Model building (Regression & Classification)
+* Feature Engineering (Lag & Rolling features)
+* Model building (Regression & Time Series Models)
 * Model evaluation (RMSE, Accuracy, etc.)
 * Feature importance using ML models
+
+---
+
+## 📌 Project Status
+
+🔄 Actively Updating
+(Currently adding preprocessing → next: model training)
 
 ---
 
